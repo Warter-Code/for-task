@@ -22,7 +22,6 @@ try
 }
 finally
 {
-    // Аккуратное закрытие даже если канал уже мёртв
     try { writer.Dispose(); } catch { }
     try { reader.Dispose(); } catch { }
     try { pipe.Dispose(); } catch { }
